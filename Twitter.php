@@ -14,12 +14,19 @@
 <h1 class="center">Twitter</h1>
 <img src = "TwitterLogo.png" alt = "Twitter Logo"
   width = "100"
-  height = "150"
-  class = "floatRight">
+  height = "150">
 
 		
 
-<form action = "Welcome.php" method = "POST">
+<form action = "Twitter.php" method = "POST">
+  <a href="https://facebook.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/" class="social-round-icon fa-icon" title="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
 
 
 			First Name: <input type= "text" name = "firstname" ><br ><br />
@@ -28,7 +35,7 @@
 
 			
 
-<input type="submit" value="Bing Bong">
+<input type="submit" value="Go!">
 			
 
 

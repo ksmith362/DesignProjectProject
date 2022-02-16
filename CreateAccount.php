@@ -15,52 +15,26 @@ body {
   font-family: Times New Roman, Helvetica, sans-serif;
 }
 
+</style>
 
-.topnav {
-  overflow: hidden;
-  background-color: #FF1493;
-  width: 2000px;
+<style>
+  .center{ 
+    text-align: center;
+    background-color: Violet;
+    color: white;}
 
-}
+</style>
 
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-
-
-}
-
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
+<style>
+/* Style the content */
 .content {
   background-color: #ddd;
   padding: 10px;
-  height: 500px; 
+  height: 500px; /* Should be removed. Only for demonstration */
   width: 2000px;
 }
 
-
+/* Style the footer */
 .footer {
   background-color: #FF1493;
   padding: 10px;
@@ -93,6 +67,8 @@ body {
     }
 </style>
 
+
+
 <style>
 .background {
   background-image: url(TwitterLogo.png);
@@ -112,22 +88,15 @@ body {
 </head>
 <body>
 
-<div class="topnav">
-  <a href="CollegeHashtag.php">#College</a>
-  <a href="MileyCyrusHashtag.php">#MileyCyrus</a>
-  <a href="MinecraftHashtag.php">#Minecraft</a>
-  <form action="/action_page.php">
-  <input type="text" placeholder="Search.." >
-  <button type="submit"><i class="fa fa-search"></i></button>
-</div>
-
-
 
 <div class="content">
-  <h2>Choose a hashtag to get the latest tea on that topic!!!</h2>
-  <p>Tweet Tweet</p>
-  <img src = "TwitterLogo.png" alt="Walmart Bird" width = "300" height="auto">
-</div>
+  <form action = "RegisterProcess.php" method = "POST">
+      First Name: <input type= "text" name = "firstname" ><br ><br />
+      Username: <input  type = "text" name = "username" ><br ><br />
+      Password: <input type= "text" name = "password" ><br ><br ><br />
+<input type="submit" value="Create Account">
+</form>
+
 
 <div class="footer">
   <marquee behavior="scroll" direction="right" scrollamount="20">Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter</marquee>
