@@ -90,7 +90,7 @@ body {
 
 
 <div class="content">
-  <form action = "sqljunk.php" method = "POST">
+  <form action = "RegisterProcess.php" method = "POST">
       First Name: <input type= "text" name = "firstname" ><br ><br />
       Username: <input  type = "text" name = "username" ><br ><br />
       Password: <input type= "text" name = "password" ><br ><br ><br />

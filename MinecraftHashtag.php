@@ -12,7 +12,13 @@
 <div class="Footer">
   <a href="Welcome.php"><button> Home </button> </a>
 </div>
-
+</style>
+<div class="topnav">
+  <a href="CollegeHashtag.php">#College</a>
+  <a href="MileyCyrusHashtag.php">#MileyCyrus</a>
+  <a href="MinecraftHashtag.php">#Minecraft</a>
+  
+</div>
 
 <?php
 $hashtag = "Minecraft";

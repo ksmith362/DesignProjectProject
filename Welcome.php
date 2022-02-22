@@ -24,16 +24,7 @@ body {
 }
 
 
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
+
 
 .topnav a {
   float: left;
@@ -116,18 +107,16 @@ body {
   <a href="CollegeHashtag.php">#College</a>
   <a href="MileyCyrusHashtag.php">#MileyCyrus</a>
   <a href="MinecraftHashtag.php">#Minecraft</a>
-  <form action="/action_page.php">
-  <input type="text" placeholder="Search.." >
-  <button type="submit"><i class="fa fa-search"></i></button>
+  
 </div>
-
 
 
 <div class="content">
   <h2>Choose a hashtag to get the latest tea on that topic!!!</h2>
   <p>Tweet Tweet</p>
-  <img src = "TwitterLogo.png" alt="Walmart Bird" width = "300" height="auto">
+  <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
 </div>
+
 
 <div class="footer">
   <marquee behavior="scroll" direction="right" scrollamount="20">Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter</marquee>

@@ -90,10 +90,10 @@ body {
 
 
 <div class="content">
-  <form action = "RegisterProcess.php" method = "POST">
-      First Name: <input type= "text" name = "firstname" ><br ><br />
-      Username: <input  type = "text" name = "username" ><br ><br />
-      Password: <input type= "text" name = "password" ><br ><br ><br />
+  <form action="RegisterProcess.php" method="POST">
+      Name: <input type= "text" name="name" ><br ><br />
+      Username: <input  type="text" name="username" ><br ><br />
+      Password: <input type= "text" name="password" ><br ><br ><br />
 <input type="submit" value="Create Account">
 </form>
 
