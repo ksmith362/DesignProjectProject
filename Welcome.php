@@ -22,7 +22,14 @@ body {
   width: 2000px;
 
 }
-
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
 
 
 
@@ -38,16 +45,19 @@ body {
 }
 
 
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
 
+
+
 .content {
-  background-color: #ddd;
+  background-color: #ece3f9;
   padding: 10px;
-  height: 500px; 
+  height: 625px; 
   width: 2000px;
 }
 
@@ -103,10 +113,8 @@ body {
 </head>
 <body>
 
-<div class="topnav">
-  <a href="CollegeHashtag.php">#College</a>
-  <a href="MileyCyrusHashtag.php">#MileyCyrus</a>
-  <a href="MinecraftHashtag.php">#Minecraft</a>
+
+
   
 </div>
 
@@ -117,19 +125,13 @@ body {
   <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
 </div>
 
+</div>
+
 
 <div class="footer">
   <marquee behavior="scroll" direction="right" scrollamount="20">Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter</marquee>
 </marquee>
-<style>
-.background {
-  background-image: url(TwitterLogo.png);
-  background-size: 25px;
-  width: 2000px;
-  height: 200px;
-  border: solid 2px violet;
-}
-<style>
+
 </div>
 
 </body>

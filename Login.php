@@ -1,117 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>HashtagTwitter</title>
-<meta charset="utf-8">
+</marquee>
+<style>
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
-  font-family: Times New Roman, Helvetica, sans-serif;
-}
+* {box-sizing: border-box;}
 
 body {
   margin: 0;
-  font-family: Times New Roman, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-</style>
-
-<style>
-  .center{ 
-    text-align: center;
-    background-color: Violet;
-    color: white;}
-
-</style>
-
-<style>
-/* Style the content */
-.content {
-  background-color: #ddd;
-  padding: 10px;
-  height: 500px; /* Should be removed. Only for demonstration */
-  width: 2000px;
-}
-
-/* Style the footer */
 .footer {
-  background-color: #FF1493;
+  background-color: #cfbaf0;
   padding: 10px;
-  width: 2000px;
+  width: 100%;
 
 }
 
+.topnav {
+  overflow: hidden;
+  background-color: #cfbaf0;
+}
 
-#left{
+.topnav a {
   float: left;
+  display: block;
+  color: #534a60;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-#right{
-  float: right;
+
+.topnav a:hover {
+  background-color: #faf8fe;
+  color: #534a60;
 }
 
+.topnav a.active {
+  background-color: #BAA5FF;
+  color: white;
 }
 
 
-</style>
 
 
-<style>
-    #content {
-        position: relative;
-    }
-    #content img {
-        position: absolute;
-        top: -120px;
-        right: -40px;
-    }
-</style>
-
-
-
-<style>
-.background {
-  background-image: url(TwitterLogo.png);
-  background-size: 25px;
-  width: 1000px;
-  height: 100px;
-  border: solid 2px violet;
-  scroll-behavior: 6;
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
 }
-</style>
 
-<div class="background">
-</div>
 
-</div>
+
+}
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+ 
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.content {
+  background-color: #e7ddf8;
+  height: 600px; 
+  width: 100%;
+}
+
+
+
 </style>
 </head>
 <body>
-
+<style h2 text-align: center;></style>
 
 <div class="content">
-  <form action = "RegisterProcess.php" method = "POST">
-      First Name: <input type= "text" name = "firstname" ><br ><br />
-      Username: <input  type = "text" name = "username" ><br ><br />
-      Password: <input type= "text" name = "password" ><br ><br ><br />
-<input type="submit" value="Create Account">
+
+<div class="topnav">
+  <a href="CreateAccount.php">Create an Account</a>
+
+
+</div>
+<div class="content">
+  <h2>Welcome to HashtagTwitter!</h2>
+  <p>You can search any hashtag and find the 15 most recent tweets in the hashtag!</p>
+  <div class="content">
+  <form action="LoginProcess.php" method="POST">
+      Username: <input  type="text" name="username" ><br ><br />
+      Password: <input type= "text" name="password" ><br ><br ><br />
+<input type="submit" value="Log me in Bitch">
 </form>
 
-
-<div class="footer">
-  <marquee behavior="scroll" direction="right" scrollamount="20">Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter</marquee>
-</marquee>
-<style>
-.background {
-  background-image: url(TwitterLogo.png);
-  background-size: 25px;
-  width: 2000px;
-  height: 200px;
-  border: solid 2px violet;
-}
-<style>
+  <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
 </div>
 
-</body>
-</html>
+<div class="footer">
+  <marquee behavior="scroll" direction="right" scrollamount="10"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
+</marquee>
+
 

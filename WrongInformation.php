@@ -74,7 +74,7 @@ body {
 }
 .content {
   background-color: #e7ddf8;
-  height: 600px; 
+  height: 680px; 
   width: 100%;
 }
 
@@ -87,22 +87,15 @@ body {
 <div class="content">
 
 <div class="topnav">
-  <a href="Login.php">Login</a>
+  <a href="Login.php">Try Again</a>
 
 
 </div>
 <div class="content">
-  <h2>Welcome to HashtagTwitter!</h2>
-  <p>You can search any hashtag and find the 15 most recent tweets in the hashtag! Just need to make an account first. So...make an account. Do it. Right now.</p>
-  <div class="content">
-  <form action="RegisterProcess.php" method="POST">
-      Name: <input type="text" name="name" ><br ><br />
-      Username: <input  type="text" name="username" ><br ><br />
-      Password: <input type= "text" name="password" ><br ><br ><br />
-<input type="submit" value="Create Account">
-</form>
+  <h2>Wrong information dummy!</h2>
 
-  <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
+
+  <img src="wronginfo.png" alt="Walmart Bird" width="300" height="auto">
 </div>
 
 <div class="footer">

@@ -1,27 +1,5 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<style>
-.footer {
-  background-color: #FF1493;
-  padding: 10px;
-  width: 2000px;
-}
-</style>
-
-<div class="Footer">
-  <a href="Welcome.php"><button> Home </button> </a>
-</div>
-</style>
-<div class="topnav">
-  <a href="CollegeHashtag.php">#College</a>
-  <a href="MileyCyrusHashtag.php">#MileyCyrus</a>
-  <a href="MinecraftHashtag.php">#Minecraft</a>
-  
-</div>
-
 <?php
-$hashtag = "Minecraft";
+$hashtag = "$_POST["hashtag"]";
 $token = "AAAAAAAAAAAAAAAAAAAAAL0vYgEAAAAAjdROO6n%2BMcoC6tmJqG0bPWO1tfE%3D02UvOP30XBBpnoaRCSInuPjzgvyfV9mfx6GdgcwJrfiahNXoRH";
 
 $ch = curl_init();
@@ -76,8 +54,4 @@ foreach ($tweets as $tweet) {
     echo "<img src='" . $users[$tweet->author_id]->profile_image_url . "' height=50>";
     echo $users[$tweet->author_id]->name . " said ";
 	echo $tweet->text . "<br /><br />";
-
-
-
 }
-
