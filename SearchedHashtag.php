@@ -1,5 +1,5 @@
 <?php
-$hashtag = "$_POST["hashtag"]";
+$hashtag = $_POST["hashtag"];
 $token = "AAAAAAAAAAAAAAAAAAAAAL0vYgEAAAAAjdROO6n%2BMcoC6tmJqG0bPWO1tfE%3D02UvOP30XBBpnoaRCSInuPjzgvyfV9mfx6GdgcwJrfiahNXoRH";
 
 $ch = curl_init();
@@ -37,13 +37,13 @@ $user_data = $data->includes->users;
 
 
 $users = []; 
-foreach ($user_data as $d) {
+foreach($user_data as $d) {
 	$users[$d->id] = $d;
 }
 
 
 
-foreach ($tweets as $tweet) {
+foreach($tweets as $tweet) {
 
 /*
            [created_at] => 2022-02-14T18:36:39.000Z

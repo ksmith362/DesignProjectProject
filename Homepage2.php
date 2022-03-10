@@ -1,3 +1,22 @@
+<?php
+
+
+session_start();
+
+
+
+    if (!(isset($_SESSION['username']) && $_SESSION['username'] != '')) {
+
+        header('Location: Login.php');
+
+    }else{
+
+       
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -105,10 +124,10 @@ body {
 
 <div class="topnav">
   <a class="active" href="Homepage.php">Home</a>
-  <a href="Login.php">Logout</a>
+  <a href="LogoutProcess.php">Logout</a>
   <a href="/////makesomethinghere**********">Click for a Suprise</a>
   <div class="search-container">
-    <form action="SearchedHashtag.php">
+    <form action="SearchedHashtag.php" method="POST">
       <input type="text" placeholder="Search.." name="hashtag">
       <button type="value">Submit</button>
     </form>
