@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,18 +91,14 @@ body {
 
 <div class="topnav">
   <a href="CreateAccount.php">Create an Account</a>
+  <a href="Login.php">Login</a>
 
 
 </div>
 <div class="content">
-  <h2>Welcome to HashtagTwitter!</h2>
-  <p>You can search any hashtag and find the 15 most recent tweets in the hashtag!</p>
-  <div class="content">
-  <form action="LoginProcess.php" method="POST">
-      Username: <input  type="text" name="username" ><br ><br />
-      Password: <input type= "text" name="password" ><br ><br ><br />
-<input type="submit" value="Log Me In Bitch">
-</form>
+  <h2>You are now successfully logged out</h2>
+
+
 
   <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
 </div>
@@ -107,5 +106,6 @@ body {
 <div class="footer">
   <marquee behavior="scroll" direction="right" scrollamount="10"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
 </marquee>
+
 
 

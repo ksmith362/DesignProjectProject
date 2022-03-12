@@ -86,22 +86,18 @@ body {
 
 <div class="content">
 
+
 <div class="topnav">
   <a href="CreateAccount.php">Create an Account</a>
+  <a href="Login.php">Login</a>
 
 
 </div>
 <div class="content">
-  <h2>Welcome to HashtagTwitter!</h2>
-  <p>You can search any hashtag and find the 15 most recent tweets in the hashtag!</p>
+  <h2>Can't do that!</h2>
+  <p>Whoa Whoa Whoa, what do you think you're doing? You can't access this page without being logged in. Log in or Create An Account!</p>
   <div class="content">
-  <form action="LoginProcess.php" method="POST">
-      Username: <input  type="text" name="username" ><br ><br />
-      Password: <input type= "text" name="password" ><br ><br ><br />
-<input type="submit" value="Log Me In Bitch">
-</form>
-
-  <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
+    <img src="WhatDoYouThinkYoureDoing.gif" alt="Peter Griffin Gif" width = "300" height = "auto">
 </div>
 
 <div class="footer">

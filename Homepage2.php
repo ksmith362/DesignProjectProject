@@ -7,13 +7,12 @@ session_start();
 
     if (!(isset($_SESSION['username']) && $_SESSION['username'] != '')) {
 
-        header('Location: Login.php');
+        header('Location: CantDoThat.php');
 
     }else{
 
        
     }
-
 
 ?>
 
@@ -123,7 +122,7 @@ body {
 <div class="content">
 
 <div class="topnav">
-  <a class="active" href="Homepage.php">Home</a>
+  <a class="active" href="Homepage2.php">Home</a>
   <a href="LogoutProcess.php">Logout</a>
   <a href="/////makesomethinghere**********">Click for a Suprise</a>
   <div class="search-container">
@@ -139,7 +138,7 @@ body {
   <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
 </div>
 <div class="footer">
-  <marquee behavior="scroll" direction="right" scrollamount="20"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
+  <marquee behavior="scroll" direction="right" scrollamount="10"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
 </marquee>
 
 
