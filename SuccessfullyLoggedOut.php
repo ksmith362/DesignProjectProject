@@ -77,7 +77,7 @@ body {
 }
 .content {
   background-color: #e7ddf8;
-  height: 600px; 
+  height: 680px; 
   width: 100%;
 }
 

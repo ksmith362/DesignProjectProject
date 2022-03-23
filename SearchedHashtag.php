@@ -128,7 +128,7 @@ body {
   </div>
 </div>
 <div class = "content"> 
-<h2> Showing the 15 most recent tweets with the hashtag: $hashtag </h2>
+<h2> Showing the 15 most recent tweets with the hashtag: <?php echo $_POST["hashtag"];?></h2> 
 <div class="footer">
   <marquee behavior="scroll" direction="right" scrollamount="10"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
 
