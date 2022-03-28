@@ -18,13 +18,12 @@ session_start();
 
 <!DOCTYPE html>
 <html>
+
 <head>
-</marquee>
 <style>
 
-
+<link rel="stylesheet" href="https://use.typekit.net/osn2stl.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
 * {box-sizing: border-box;}
 
 body {
@@ -43,6 +42,11 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #cfbaf0;
+  font-family: input-serif,serif;
+  font-weight: 400;
+  font-style: normal;
+
+
 }
 
 .topnav a {
@@ -124,6 +128,7 @@ body {
 <div class="topnav">
   <a class="active" href="Homepage2.php">Home</a>
   <a href="LogoutProcess.php">Logout</a>
+  <a href="Favorites.php">Favorite Hashtags</a>
   <a href="/////makesomethinghere**********">Click for a Suprise</a>
   <div class="search-container">
     <form action="SearchedHashtag.php" method="POST">

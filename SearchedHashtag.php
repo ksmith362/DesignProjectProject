@@ -22,7 +22,7 @@ session_start();
 </marquee>
 <style>
 
-
+<link rel="stylesheet" href="https://use.typekit.net/osn2stl.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box;}
@@ -43,6 +43,9 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #cfbaf0;
+  font-family: input-serif,serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .topnav a {
@@ -122,18 +125,18 @@ body {
   <a href="LogoutProcess.php">Logout</a>
   <div class="search-container">
     <form action="SearchedHashtag.php" method="POST">
-      <input type="text" placeholder="Search.." name="hashtag">
+      <input type="text" placeholder="Search.." name="searchedHashtag">
       <button type="value">Submit</button>
     </form>
   </div>
 </div>
 <div class = "content"> 
-<h2> Showing the 15 most recent tweets with the hashtag: <?php echo $_POST["hashtag"];?></h2> 
+<h2> Showing the 15 most recent tweets with the hashtag: <?php echo $_POST["searchedHashtag"];?></h2> 
 <div class="footer">
   <marquee behavior="scroll" direction="right" scrollamount="10"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
 
 <?php
-$hashtag = $_POST["hashtag"];
+$searchedHashtag = $_POST["searchedHashtag"];
 $token = "AAAAAAAAAAAAAAAAAAAAAL0vYgEAAAAAjdROO6n%2BMcoC6tmJqG0bPWO1tfE%3D02UvOP30XBBpnoaRCSInuPjzgvyfV9mfx6GdgcwJrfiahNXoRH";
 
 $ch = curl_init();

@@ -7,7 +7,7 @@
 </marquee>
 <style>
 
-
+<link rel="stylesheet" href="https://use.typekit.net/osn2stl.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box;}
@@ -27,6 +27,9 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #cfbaf0;
+  font-family: input-serif,serif;
+font-weight: 400;
+font-style: normal;
 }
 
 .topnav a {
@@ -79,6 +82,7 @@ body {
   background-color: #e7ddf8;
   height: 680px; 
   width: 100%;
+  text-align: center;
 }
 
 
