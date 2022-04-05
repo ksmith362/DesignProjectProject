@@ -61,6 +61,12 @@
     height: 600px;
     width: 100%;
     }
+    .content button{
+    background-color: #FFFFFF;
+    font-family: input-serif,serif;
+    font-weight: 400;
+    font-style: normal;
+    }    
     </style>
   </head>
   <body>
@@ -76,7 +82,7 @@
             Name: <input type="text" name="name" ><br ><br />
             Username: <input  type="text" name="username" ><br ><br />
             Password: <input type= "text" name="password" ><br ><br ><br />
-            <input type="submit" value="Create Account">
+            <button type="value">Create Account</button>
           </form>
           <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
         </div>

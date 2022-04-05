@@ -133,7 +133,7 @@ body {
   <a class="active" href="Homepage2.php">Home</a>
   <a href="LogoutProcess.php">Logout</a>
   <div class="search-container">
-    <form action="SearchedHashtag.php" method="POST">
+    <form action="searchedHashtag.php" method="POST">
       <input type="text" placeholder="Search.." name="searchedHashtag">
       <button type="value">Submit</button>
     </form>

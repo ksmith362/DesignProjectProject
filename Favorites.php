@@ -100,6 +100,12 @@ header('Location: CantDoThat.php');
     font-weight: 400;
     font-style: normal;
     }
+    .text-box button{
+    background-color: #FFFFFF;
+    font-family: input-serif,serif;
+    font-weight: 400;
+    font-style: normal;
+    }
     </style>
   </head>
   <body>
