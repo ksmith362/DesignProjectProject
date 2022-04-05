@@ -1,24 +1,12 @@
-<?php 
-
+<?php
+session_start();
 $connection=mysqli_connect("localhost", "root" , "root", "favorites");
-
 $hashtag=mysqli_real_escape_string($connection, $_POST["hashtag"]);
+$user_id=mysqli_real_escape_string($connection, $_POST["user_id"]);
 
 
+$user_id = $_SESSION['user_id'];
 
- 
+mysqli_query($connection,"insert into favoritehashtags (user_id, hashtag) values ('$user_id', '$hashtag')") or die(mysqli_error($connection));
 
-//User is already in the goolog
-
-$sql = "SELECT username FROM users WHERE username='$username'";
-$result = mysqli_query($connection,$sql) or die("Query unsuccessful") ;
-     
-
-
-
-mysqli_query($connection,"insert into FavoriteHashtags (user_id, favoritehashtags) values ('$user_id', '$favoritehashtags')");
-
-
-
-
-
+header('Location: favorites.php');

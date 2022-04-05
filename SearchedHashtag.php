@@ -19,17 +19,18 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-</marquee>
+    <link rel="stylesheet" href="https://use.typekit.net/osn2stl.css">
+
 <style>
 
-<link rel="stylesheet" href="https://use.typekit.net/osn2stl.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+
+meta name="viewport" content="width=device-width, initial-scale=1"
 * {box-sizing: border-box;}
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #e7ddf8;
 
 }
 
@@ -44,8 +45,9 @@ body {
   overflow: hidden;
   background-color: #cfbaf0;
   font-family: input-serif,serif;
-font-weight: 400;
-font-style: normal;
+  font-weight: 400;
+  font-style: normal;
+        
 }
 
 .topnav a {
@@ -89,6 +91,10 @@ font-style: normal;
   font-size: 17px;
   border: none;
   cursor: pointer;
+  font-family: input-serif,serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 .topnav .search-container button:hover {
@@ -115,6 +121,9 @@ font-style: normal;
   background-color: #e7ddf8;
   height: 680px; 
   width: 100%;
+  font-family: input-serif,serif;
+  font-weight: 400;
+  font-style: normal;      
 }
 
 </style>
@@ -132,15 +141,13 @@ font-style: normal;
 </div>
 <div class = "content"> 
 <h2> Showing the 15 most recent tweets with the hashtag: <?php echo $_POST["searchedHashtag"];?></h2> 
-<div class="footer">
-  <marquee behavior="scroll" direction="right" scrollamount="10"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
 
 <?php
 $searchedHashtag = $_POST["searchedHashtag"];
 $token = "AAAAAAAAAAAAAAAAAAAAAL0vYgEAAAAAjdROO6n%2BMcoC6tmJqG0bPWO1tfE%3D02UvOP30XBBpnoaRCSInuPjzgvyfV9mfx6GdgcwJrfiahNXoRH";
 
 $ch = curl_init();
-$url = "https://api.twitter.com/2/tweets/search/recent?query=" . urlencode($hashtag) . "&tweet.fields=created_at&user.fields=" . urlencode("created_at,username,profile_image_url");
+$url = "https://api.twitter.com/2/tweets/search/recent?query=" . urlencode($searchedHashtag) . "&tweet.fields=created_at&user.fields=" . urlencode("created_at,username,profile_image_url");
 $url .= "&expansions=" . urlencode("author_id");
 
 
@@ -189,6 +196,8 @@ foreach ($tweets as $tweet) {
             [author_id] => 23775205
 */
     echo "<img src='" . $users[$tweet->author_id]->profile_image_url . "' height=50>";
-    echo $users[$tweet->author_id]->name . " said ";
+    echo $users[$tweet->author_id]->name . "'said'";
 	echo $tweet->text . "<br /><br />";
-}
+} ?>
+<div class="footer">
+  <marquee behavior="scroll" direction="right" scrollamount="10"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
