@@ -1,11 +1,21 @@
 <?php
 session_start();
-$connection=mysqli_connect("localhost", "root" , "root", "favorites");
-mysqli_real_escape_string($connection, $_POST["hashtag"]) = $hashtag;
-
-mysqli_real_escape_string($connection, $_POST["user_id"]) = $user_id;
+$connection=mysqli_connect("localhost", "root" , "root", "twitter");
 
 $user_id = $_SESSION['user_id'];
 
-mysqli_query($connection,"delete from favoritehashtags (user_id, hashtag) values ('$user_id', '$hashtag')") or die(mysqli_error($connection));
-header('Location: favorites.php');
+$hashtag=mysqli_real_escape_string($connection, $_POST["hashtag"]);
+
+
+
+
+
+
+$sql = "DELETE FROM favoritehashtags WHERE hashtag = '$hashtag' and user_id = $user_id";
+echo $sql;
+if (mysqli_query($connection, $sql)) {
+    echo "Record deleted successfully";
+} else {
+    echo "Error deleting record: " . mysqli_error($connection);
+}
+

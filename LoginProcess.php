@@ -1,8 +1,4 @@
 <?php
-session_start();
-
-$connection=mysqli_connect("localhost", "root" , "root", "twitter");
-
 $username=mysqli_real_escape_string($connection, $_POST["username"]);
 
 $password=mysqli_real_escape_string($connection, $_POST["password"]);

@@ -1,16 +1,6 @@
-<?php
-session_start();
-if (!(isset($_SESSION['username']) && $_SESSION['username'] != '')) {
-header('Location: CantDoThat.php');
-}else{
-}
-?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="https://use.typekit.net/osn2stl.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
+
+    
+
         * {box-sizing: border-box;}
         body {
         margin: 0;
@@ -117,40 +107,5 @@ header('Location: CantDoThat.php');
         }
         </style>
     </head>
-    <body>
-        <div class="content">
-            <div class="topnav">
-                <a class="active" href="Homepage2.php">Home</a>
-                <a href="LogoutProcess.php">Logout</a>
-                <a href="Favorites.php">Favorite Hashtags</a>
-                <a href="/////makesomethinghere**********">Click for a Suprise</a>
-                <div class="search-container">
-                    <form action="SearchedHashtag.php" method="POST">
-                        <input type="text" placeholder="Search.." name="searchedHashtag">
-                        <button type="value">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="welcomeText">
-            <h2>Welcome to HashtagTwitter!</h2>
-            <p>You can search any hashtag and find the 15 most recent tweets in the hashtag!</p>
-            <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
-        </div>
-        <div class="content">
-            <div class="saved-hashtags">
-                <h2>Your Favorite Hashtags:</h2>
-                <?php
-                $connection=mysqli_connect("localhost", "root" , "root", "favorites");
-                $res=mysqli_query($connection,"select * from favoritehashtags");
-                while($row=mysqli_fetch_assoc($res)){
-                
-                echo "<br> " .$row["hashtag"] . "<br />";
-                }
-                ?>
-            </div>
-        </div>
+    </html>
 
-                <div class="footer">
-                    <marquee behavior="scroll" direction="right" scrollamount="10"> HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter HashtagTwitter</marquee>
-                    </marquee>

@@ -1,10 +1,4 @@
-
-
-
 <?php 
-
-
-$connection=mysqli_connect("localhost", "root" , "root", "twitter");
 
 $username=mysqli_real_escape_string($connection, $_POST["username"]);
 
@@ -31,15 +25,6 @@ $result = mysqli_query($connection,$sql) or die("Query unsuccessful") ;
 
 $res=mysqli_query($connection,"select * from users");
 while($row=mysqli_fetch_assoc($res)){
-	echo "<br " . $row["ID"] . " " . $row["Name"] . "<br />";
+echo "<br " . $row["ID"] . " " . $row["Name"] . "<br />";
 }
-
-
-
-
-
-
-
-
-
-
+?>
