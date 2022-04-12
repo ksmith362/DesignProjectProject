@@ -1,15 +1,16 @@
-
-    
-
-        * {box-sizing: border-box;}
-        body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        }
-        .footer {
+       body{
+        background-color: #e7ddf8;
+        overflow: auto;
+        text-align: center;
+       }
+       .footer {
         background-color: #cfbaf0;
-        padding: 10px;
         width: 100%;
+        height: 30px;
+        position: fixed;
+        bottom: 0;
+        left:0px;
+        right:0px;
         }
         .topnav {
         overflow: hidden;
@@ -17,6 +18,8 @@
         font-family: input-serif,serif;
         font-weight: 400;
         font-style: normal;
+        left: 0px;
+        right: 0px;
         }
         .topnav a {
         float: left;
@@ -28,6 +31,10 @@
         font-size: 17px;
         }
         .topnav a:hover {
+        background-color: #faf8fe;
+        color: #534a60;
+        }
+        .content .topnav a:hover {
         background-color: #faf8fe;
         color: #534a60;
         }
@@ -43,6 +50,9 @@
         margin-top: 8px;
         font-size: 17px;
         border: none;
+        font-family: input-serif,serif;
+        font-weight: 400;
+        font-style: normal;        
         }
         .topnav .search-container button {
         float: right;
@@ -82,17 +92,22 @@
         font-style: normal;
         }
         .content {
-        background-color: #e7ddf8;
-        height: 700px;
+        background-color: #E7DDF8;
         width: 100%;
-        font-family: input-serif,serif;
+        font-family: harfang-pro, serif;
         font-weight: 400;
         font-style: normal;
         }
+        .button.buttonStyle{
+        background-color: #E7DDF8;
+        font-family: input-serif,serif;
+        font-weight: 400;
+        font-style: normal;
+        }   
         .saved-hashtags h2{
         float: right;
         background-color: #e7ddf8;
-        font-family: input-serif,serif;
+        font-family: harfang-pro, serif;
         font-weight: 400;
         font-style: normal;
         padding-left: 20px;
@@ -100,12 +115,16 @@
         .welcomeText{
         float: right;
         background-color: #e7ddf8;
-        font-family: input-serif,serif;
+        font-family: harfang-pro, serif;
         font-weight: 400;
         font-style: normal;
         padding-left: 20px;
         }
-        </style>
-    </head>
-    </html>
-
+        .welcomeText h2{
+        float: right;
+        background-color: #e7ddf8;
+        font-family: harfang-pro, serif;
+        font-weight: 400;
+        font-style: normal;
+        padding-left: 20px;
+        }

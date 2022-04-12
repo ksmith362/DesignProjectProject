@@ -1,4 +1,7 @@
 <?php
+$_G_NO_LOGIN = true;
+include ("global.php");
+
 $username=mysqli_real_escape_string($connection, $_POST["username"]);
 
 $password=mysqli_real_escape_string($connection, $_POST["password"]);
@@ -17,7 +20,7 @@ $result = mysqli_query($connection,$sql) or die("Query unsuccessful") ;
         $row = mysqli_fetch_assoc($result);
         $_SESSION["username"] = $username; 
         $_SESSION["user_id"]=$row["id"];
-        header('Location: VerificationProcess.php');
+        header('Location: Homepage.php');
          
       } else {
              header('Location: WrongInformation.php');

@@ -1,9 +1,8 @@
 <?php
-    include("global.php");
     include("header.php");
-    
-?>
 
+?>
+<link rel="stylesheet" href="style.css" type="text/css"/>
 <div class = "content"> 
 <h2> Showing the 15 most recent tweets with the hashtag: <?php echo $_POST["searchedHashtag"];?></h2> 
 

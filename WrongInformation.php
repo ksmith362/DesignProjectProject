@@ -1,7 +1,5 @@
-<?php
-    include("global.php");
-    include("header.php");
-?>
+
+<link rel="stylesheet" href="style.css" type="text/css"/>
  <div class="content">
       <div class="topnav">
         <a href="Login.php">Try Again</a>

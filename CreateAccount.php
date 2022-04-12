@@ -1,7 +1,7 @@
 <?php
-    include("global.php");
-    include("header.php");
+    include("LoggedOutHeader.php");
 ?>
+<link rel="stylesheet" href="style.css" type="text/css"/>
  <div class="content">
         <h2>Welcome to HashtagTwitter!</h2>
         <p>You can search any hashtag and find the 15 most recent tweets in the hashtag! Just need to make an account first. So...make an account. Do it. Right now.</p>

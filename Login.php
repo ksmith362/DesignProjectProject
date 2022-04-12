@@ -1,8 +1,9 @@
 <?php
 	$_G_NO_LOGIN = true;
-    include("header.php");
-    include("global.php");
+    include("LoggedOutHeader.php");
+    
 ?>
+<link rel="stylesheet" href="style.css" type="text/css"/>
  <div class="content">
         <h2>Welcome to HashtagTwitter!</h2>
         <p>You can search any hashtag and find the 15 most recent tweets in the hashtag!</p>
@@ -10,7 +11,10 @@
           <form action="LoginProcess.php" method="POST">
             Username: <input  type="text" name="username" ><br ><br />
             Password: <input type= "text" name="password" ><br ><br ><br />
-            <button type="value">Log Me In Bitch</button>
+            <button  id="uniqueButton" type="value" class="buttonStyle">Login</button>
           </form>
           <img src="TwitterLogo.png" alt="Walmart Bird" width="300" height="auto">
         </div>
+        <?php
+        include ("footer.php");
+    ?>

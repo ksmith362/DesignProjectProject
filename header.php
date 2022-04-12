@@ -1,11 +1,11 @@
 <!----contains all the common html elements before the body--->
 <?php
 include("global.php");
-
 ?>
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="https://use.typekit.net/osn2stl.css">
+<link rel="stylesheet" href="style.text/css"/>
  <div class="content">
             <div class="topnav">
                 <a class="active" href="Homepage.php">Home</a>
