@@ -4,10 +4,10 @@
 ?>
 <link rel="stylesheet" href="style.css" type="text/css"/>
 <div class = "content"> 
-<h2> Showing the 15 most recent tweets with the hashtag: <?php echo $_POST["searchedHashtag"];?></h2> 
+<h2> Showing the 15 most recent tweets with the hashtag: <?php echo $_POST["searchedHashtag"].$_GET['hashtag'];?></h2> 
 
 <?php
-$searchedHashtag = $_POST["searchedHashtag"];
+$searchedHashtag = $_POST["searchedHashtag"].$_GET['hashtag'];
 $token = "AAAAAAAAAAAAAAAAAAAAAL0vYgEAAAAAjdROO6n%2BMcoC6tmJqG0bPWO1tfE%3D02UvOP30XBBpnoaRCSInuPjzgvyfV9mfx6GdgcwJrfiahNXoRH";
 
 $ch = curl_init();

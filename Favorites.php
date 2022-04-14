@@ -24,6 +24,7 @@ include("header.php");
     </form>
     <div class="deleteHashtags">
       <h2>Delete Hashtags From Favorite Hashtags:</h2>
+      <p>You can delete hashtags here:</p>
       <div class="text-box">
         <form action="DeleteHashtagProcess.php" method = "POST">
           <input type="text" name = "hashtag">
