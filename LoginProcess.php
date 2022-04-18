@@ -20,7 +20,8 @@ $result = mysqli_query($connection,$sql) or die("Query unsuccessful") ;
         $row = mysqli_fetch_assoc($result);
         $_SESSION["username"] = $username; 
         $_SESSION["user_id"]=$row["id"];
-        header('Location: Homepage.php');
+        header('Location: Homepage.php
+            ');
          
       } else {
              header('Location: WrongInformation.php');

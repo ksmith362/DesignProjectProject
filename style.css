@@ -105,6 +105,7 @@
         font-style: normal;
         }   
         .content .saved-hashtags a{
+        text-decoration: none;
         float: left;
         display: block;
         color: #534a60;
