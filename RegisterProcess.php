@@ -3,9 +3,12 @@ $_G_NO_LOGIN = true;
 include ("global.php");
 $username=mysqli_real_escape_string($connection, $_POST["username"]);
 
+
 $password=mysqli_real_escape_string($connection, $_POST["password"]);
 
+
 $name=mysqli_real_escape_string($connection, $_POST["name"]);
+
 
 
  
