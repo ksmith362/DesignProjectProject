@@ -1,4 +1,5 @@
 <?php
+//This page pops up when the username they chose in already in use and the page tells the to choose another because it has already been taken. 
 include("LoggedOutHeader.php");
 ?>
 <link rel="stylesheet" href="style.css" type="text/css"/>

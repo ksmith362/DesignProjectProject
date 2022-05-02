@@ -14,6 +14,7 @@ $name=mysqli_real_escape_string($connection, $_POST["name"]);
  
 
 //User is already in the goolog
+//This is the process that places the user input for a new account into my user table in the twitter database. 
 
 $sql = "SELECT username FROM users WHERE username='$username'";
 $result = mysqli_query($connection,$sql) or die("Query unsuccessful") ;

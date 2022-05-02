@@ -1,4 +1,5 @@
 <?php
+//This is the page that explains to the user that they are successfully logged out
     $_G_NO_LOGIN = true;
     include("LoggedOutHeader.php");
 ?>

@@ -1,6 +1,6 @@
 <?php
     include("header.php");
-
+//This page uses the Twitter API to bring the 15 most recent hashtags to the page
 ?>
 <link rel="stylesheet" href="style.css" type="text/css"/>
 <div class = "content"> 

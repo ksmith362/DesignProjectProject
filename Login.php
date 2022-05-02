@@ -1,3 +1,4 @@
+<!--This is the login page--->
 <?php
 	$_G_NO_LOGIN = true;
     include("LoggedOutHeader.php");

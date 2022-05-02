@@ -7,7 +7,7 @@ $user_id = $_SESSION['user_id'];
 $hashtag=mysqli_real_escape_string($connection, $_POST["hashtag"]);
 
 
-
+//This is the process page where it deletes the hashtag from the database for the user
 
 
 

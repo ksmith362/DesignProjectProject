@@ -1,5 +1,6 @@
 <?php
     include("LoggedOutHeader.php");
+    //This is the page that allows a user to create an account
 ?>
 <link rel="stylesheet" href="style.css" type="text/css"/>
  <div class="content">

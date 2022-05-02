@@ -1,5 +1,5 @@
 <?php
-
+//this is the page that allows users to save hashtags as well as delete them.
 include("header.php");
 ?>
 <link rel="stylesheet" href="style.css" type="text/css"/>
@@ -7,8 +7,11 @@ include("header.php");
   <h2>Favorite Hashtags</h2>
   <p>Here are all the hashtags that you have saved:</p>
   <?php
+  //shows all saved hastags for speicifc user
   $connection=mysqli_connect("localhost", "root" , "root", "twitter");
+  //makes sure that it is the correct user
   $user_id = $_SESSION['user_id'];
+  //displays the saved hashtags
   $res=mysqli_query($connection,"select * from favoritehashtags WHERE user_id = $user_id");
   while($row=mysqli_fetch_assoc($res)){
   

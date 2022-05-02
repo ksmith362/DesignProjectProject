@@ -1,4 +1,4 @@
-
+<!---if the user inputs the wrong information in the login page, it will bring them to this page prompting them to try again because their information was incorrect--->
 <link rel="stylesheet" href="style.css" type="text/css"/>
  <div class="content">
       <div class="topnav">

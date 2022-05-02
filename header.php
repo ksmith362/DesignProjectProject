@@ -1,9 +1,10 @@
-<!----contains all the common html elements before the body--->
+<!---header.php is included for all pages that need the top naviagation coded below.-->
 <?php
 include("global.php");
 ?>
 <!DOCTYPE html>
 <html>
+<!--this is my stylesheet for the fonts I used throughout the web app--->
 	<link rel="stylesheet" href="https://use.typekit.net/osn2stl.css">
 	<link rel="stylesheet" href="style.text/css"/>
 	<div class="content">

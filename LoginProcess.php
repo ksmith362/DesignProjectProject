@@ -12,7 +12,7 @@ $password=mysqli_real_escape_string($connection, $_POST["password"]);
 
 
  
- 
+ //This basically says if the username and the password match whats in the table of users then to take the user to homepage.php.
 
 
 

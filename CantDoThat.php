@@ -1,4 +1,5 @@
     <?php 
+    //this page is what comes up if someone without an account tries to access a page they are not permitted to access.
     include("LoggedOutHeader.php");
     ?>
 <link rel="stylesheet" href="style.css" type="text/css"/>
